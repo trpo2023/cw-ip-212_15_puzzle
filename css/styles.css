@@ -52,10 +52,10 @@ body {
   font-family: "Arial", "sans-serif";
   background-attachment: fixed;
   font-size: 17px;
-  color: white; }
+  color: gray; }
 
 #field {
-  background-color: #547980;
+  background-color: #0D0800;
   width: 500px;
   height: 500px;
   margin-top: 50px;
@@ -65,7 +65,7 @@ body {
   width: 480px;
   height: 80px;
   margin: auto;
-  color: white;
+  color: gray;
   font-size: 18px;
   display: flex; }
 
@@ -79,7 +79,7 @@ body {
 
 #field, #block, #winblock {
   border-radius: 5px;
-  background: linear-gradient(160deg, #547980, #83bb9d 30%, #547980); }
+  background: linear-gradient(-45deg, #4D3920, #4d3825 30%, #070300); }
 
 #winblock {
   height: 600px;
@@ -111,7 +111,7 @@ body {
   justify-content: space-between;
   width: 500px;
   height: 100px;
-  background-color: #547980;
+  background-color: #231605;
   margin-top: 50px;
   border-radius: 5px; }
 
@@ -122,7 +122,7 @@ body {
   width: 500px;
   height: 500px;
   margin-top: 210px;
-  background-color: #547980;
+  background-color: #191004;
   color: white;
   animation-name: animate;
   animation-duration: 0.5s; }
@@ -143,20 +143,23 @@ body {
   margin-right: auto;
   margin-left: auto;
   font-family: "Arial", "sans-serif";
-  color: white;
+  color: lightgray;
   font-size: 22px;
   font-weight: bold;
-  background: linear-gradient(20deg, #b3e8b3, #9de0ad, #b3e8b3);
+  background: linear-gradient(15deg, #160b00 0%, #372110 50%, #160c00 100%);
   border-radius: 5px;
   border: none; }
+
+.start_block .start_button {
+  color: white; }
 
 .start_text {
   margin-left: 20px;
   margin-right: 20px; }
 
 .start_button:hover {
-  color: #547980;
-  background: #e5fcc2;
+  color: #648f98;
+  background: #1E1304;
   border: none;
   transition: background-color 0.5s, color 0.5s; }
 
@@ -196,7 +199,7 @@ body {
   margin-top: 335px;
   animation-name: animate;
   animation-duration: 0.5s;
-  background: rgba(127, 181, 154, 0.5);
+  background: rgba(69, 51, 28, 0.5);
   border-radius: 5px; }
 
 .image {
@@ -210,13 +213,13 @@ body {
   position: absolute; }
 
 .cellnull {
-  background-color: rgba(157, 224, 173, 0.4);
+  background-color: rgba(80, 60, 36, 0.4);
   border-radius: 10px;
-  border: rgba(157, 224, 173, 0.3) solid 1px; }
+  border: rgba(103, 86, 65, 0.3) solid 1px; }
 
 .tilenull {
-  background: linear-gradient(130deg, #9de0ad 5%, #e5fcc2 95%);
-  color: #594f4f;
+  background: linear-gradient(130deg, #371b00 0%, #733f16 70%);
+  color: white;
   font-size: 55px;
   font-family: "Britannic Bold";
   font-weight: bold;
@@ -224,10 +227,12 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  border: #9de0ad solid 1px; }
+  border: #130a00 solid 1px; }
 
 .tilenull:hover {
-  background: linear-gradient(130deg, #ddf9c0 95%, #f9ffde 5%); }
+  color: gray;
+  background: #261300;
+  transition: background-color 0.5s, color 0.5s; }
 
 @keyframes animate {
   from {

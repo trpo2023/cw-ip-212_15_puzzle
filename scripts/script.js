@@ -533,6 +533,7 @@ $(document).ready(function () { // изначально при загрузке 
     PopUpShow();
     WinHide(); // изначально при загрузке документа всплывающее окно не видно
     howHide();
+    WinShow();
 });
 
 addEventListener('keydown', function (event) { // обработчик клавиатурных событий
