@@ -1,0 +1,14 @@
+{
+  "name": "cw-ip-212_15_puzzle",
+  "version": "1.0.0",
+  "description": "15_puzzle\r group course work to create a game - 15-puzzle.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
