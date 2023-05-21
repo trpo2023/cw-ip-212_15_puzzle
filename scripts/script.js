@@ -102,7 +102,7 @@ function WinShow() {
     let ho = document.getElementById('ho'); // заберем время окончания игры
     let min = document.getElementById('min'); // перед тем, как стереть его
     let sec = document.getElementById('sec');
-    let winquant = document.querySelector('#winquant');
+    let winquant = document.querySelector('#winquant'); // ходы
 
     winh = ho.textContent; // здесь записано ВРЕМЯ
     winm = min.textContent;

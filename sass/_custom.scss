@@ -87,7 +87,7 @@ body {
 
 .start_block {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     width: 500px;
     height: 500px;
@@ -99,6 +99,7 @@ body {
 }
 
 .start_name {
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 35px;
