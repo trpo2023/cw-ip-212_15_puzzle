@@ -533,7 +533,6 @@ $(document).ready(function () { // изначально при загрузке 
     PopUpShow();
     WinHide(); // изначально при загрузке документа всплывающее окно не видно
     howHide();
-    WinShow();
 });
 
 addEventListener('keydown', function (event) { // обработчик клавиатурных событий
@@ -559,4 +558,6 @@ addEventListener('keydown', function (enter) {
         console.log(ide);
         PopUpShow();
     }
-})
+});
+
+module.exports = odd;
