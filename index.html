@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пятнашки</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/img/page-icon.ico">
+</head>
+<body>
+
+<main>
+    <div class="inform" id="infver">
+        <p id="version">Начните игру!</p>
+    </div>
+    <div id="field"></div>
+    <div class="inform">
+        <p id="timer">
+            <span id="ho">00</span>:<span id="min">00</span>:<span id="sec">00</span>
+        </p>
+        <p id="quant">0</p>
+        <button id="new" class="start_button">Новая игра!</button>
+    </div>
+
+    <div id="popup" class="popup"> <!-- всплывающее окно старта -->
+        <div class="start_block" id="block">
+            <p class="start_name">Пятнашки</p>
+            <button id="start" class="start_button">Начать игру!</button>
+        </div>
+    </div>
+
+    <div id="winning" class="popup">
+        <div class="start_block" id="winblock">
+            <p class="start_name"><big><big>Победа!</big></big></p>
+
+            <p class="start_text" id="record"></p>
+
+            <div class="wininf">
+
+                <div>
+                    <p class="start_text">Ваше время:</p>
+                    <p id="wintime">
+                        <span id="winh">00</span>:<span id="winm">00</span>:<span id="wins">00</span>
+                    </p>
+                </div>
+                <div>
+                    <p class="start_text">Ваше количество ходов:</p>
+                    <p id="winquant">0</p>
+                </div>
+            </div>
+            <p class="start_text" id="fact">Интересный факт!</p>
+            <div class="wininf">
+                <button id="restart" class="start_button">Новая игра!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="how" class="popup">
+        <div class="how_popup">
+            <img id="mouse" class="image" src="assets/img/pad-cursor.png" alt="Управление при помощи мыши">
+            <p id="or">OR</p>
+            <img class="image" src="assets/img/pad-keys.png" alt="Управление при помощи клавиатуры">
+        </div>
+    </div>
+
+</main>
+
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script src="scripts/wins.js" type="text/javascript"></script>
+<script src="scripts/script.js" type="text/javascript"></script>
+
+</body>
+</html>

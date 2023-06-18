@@ -1,0 +1,239 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+	display: flex;
+	background-color: #331D15;
+	background-image: url(../assets/img/page-background.jpg);
+	background-size: 100% 100%;
+	justify-content: center;
+    font-family: "Arial", "sans-serif";
+	background-attachment: fixed;
+	font-size: 17px;
+    color: gray;
+}
+
+#field {
+    background-color: #0D0800;
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+}
+
+#version {
+    width: 480px;
+    height: 80px;
+    margin: auto;
+    color: gray;
+    font-size: 18px;
+    display: flex;
+}
+
+#wintime, #winquant {
+    margin: 10px auto 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #e5fcc2;
+}
+
+#field, #block, #winblock {
+    border-radius: 5px;
+    background: linear-gradient(-45deg, #4D3920, #4d3825 30%, #070300);
+}
+
+#winblock {
+    height: 600px;
+    display: flex;
+    align-content: space-between;
+}
+
+#quant, #timer {
+    width: 50%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #e5fcc2;
+}
+
+#or {
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    color: #e5fcc2;
+}
+
+#mouse {
+    margin-right: -8%;
+}
+
+.inform {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 100px;
+    background-color: #231605;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.start_block {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    margin-top: 210px;
+    background-color: #191004;
+    color: white;
+    animation-name: animate;
+    animation-duration: 0.5s
+}
+
+.start_name {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #e5fcc2;
+}
+
+.start_button {
+    width: 50%;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Arial", "sans-serif";
+    color: lightgray;
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(15deg, rgba(22,11,0,1) 0%, rgba(55,33,16,1) 50%, rgba(22,12,0,1) 100%);
+    border-radius: 5px;
+    border: none;
+}
+
+.start_block .start_button {
+    color: white;
+}
+
+.start_text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.start_button:hover {
+    color: #648f98;
+    background: #1E1304;
+    border: none;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hide {
+    animation-name: hiding;
+    animation-duration: 0.5s
+}
+
+.wininf {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.wininf .start_button {
+    height: 75px;
+    width: 215px;
+    margin-top: auto;
+}
+
+.how_popup {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 335px;
+    animation-name: animate;
+    animation-duration: 0.5s;
+    background: rgba(69, 51, 28, 0.5);
+    border-radius: 5px;
+}
+
+.image {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+}
+
+.cell {
+    width: 105px;
+    height: 105px;
+    position: absolute;
+}
+
+.cellnull {
+    background-color: rgba(80, 60, 36, 0.4);
+    border-radius: 10px;
+    border: rgba(103, 86, 65, 0.3) solid 1px;
+}
+
+.tilenull {
+    background: linear-gradient(130deg, rgba(55,27,0,1) 0%, rgba(115,63,22,1) 70%);
+    color: white;
+    font-size: 55px;
+    font-family: "Britannic Bold";
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: #130a00 solid 1px;
+}
+
+.tilenull:hover {
+    color: gray;
+    background: #261300;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes hiding {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
