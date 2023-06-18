@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "15_puzzle\r group course work to create a game - 15-puzzle.",
   "main": "script.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },

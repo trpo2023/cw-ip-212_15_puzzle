@@ -11,7 +11,8 @@ const odd = (numbers) => {
             }
         }
     }
-    return w;
+    Win = w;
+    return Win;
 }
 
 const even = (numbers) => {
@@ -25,7 +26,8 @@ const even = (numbers) => {
             w = true; // иначе возвращаем true
         }
     }
-    return w;
+    Win = w;
+    return Win;
 }
 
 module.exports = { 

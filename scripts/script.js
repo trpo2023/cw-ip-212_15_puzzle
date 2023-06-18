@@ -438,43 +438,6 @@ function up() {
     win();
 }
 
-// проверка победы по четному инварианту
-function even() {
-    let w = false; // временная переменная
-    UpdateNumbers(); // заберем последовательность чисел
-
-    for (let j = 1; j < 16; ++j) { // если элемент массива не равен числу от 1 до 16,
-        if (j !== numbers[j - 1]) { // то возвращаем ложь и выходим из цикла
-            w = false;
-            break;
-        } else {
-            w = true; // иначе возвращаем правду
-        }
-    }
-    Win = w;
-    return Win;
-}
-
-// проверка победы по нечетному инварианту
-function odd() {
-    let w = false;
-
-    UpdateNumbers();
-
-    if ((numbers[14] == 14) && (numbers[13] == 15)) { // проверяем, на правильных ли местах фишки 15 и 14
-        for (let j = 1; j < 14; ++j) {
-            if (j !== numbers[j - 1]) {
-                w = false;
-                break;
-            } else {
-                w = true;
-            }
-        }
-    }
-    Win = w;
-    return Win;
-}
-
 // обновляем массив с последовательность. чисел
 function UpdateNumbers() {
     numbers.length = 0; // очищаем массив
@@ -492,9 +455,11 @@ function UpdateNumbers() {
 // функция проверки победы и запуска окна победы
 function win() {
     if (invariant) { // проверка для четного инварианта
-        even();
+        UpdateNumbers()
+        even(numbers);
     } else { // проверка для нечетного инварианта
-        odd();
+        UpdateNumbers()
+        odd(numbers);
     }
     if (Win) {
         setTimeout(WinShow, 900); // при победе запустим окно победы с небольшой задержкой
@@ -559,5 +524,3 @@ addEventListener('keydown', function (enter) {
         PopUpShow();
     }
 });
-
-module.exports = odd;
